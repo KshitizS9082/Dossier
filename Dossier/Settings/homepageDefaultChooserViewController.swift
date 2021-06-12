@@ -1,6 +1,6 @@
 //
 //  homepageDefaultChooserViewController.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 19/02/21.
 //  Copyright © 2021 Kshitiz Sharma. All rights reserved.

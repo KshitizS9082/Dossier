@@ -1,6 +1,6 @@
 //
 //  DateHeader.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 26/05/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

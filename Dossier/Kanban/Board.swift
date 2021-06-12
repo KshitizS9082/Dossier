@@ -1,6 +1,6 @@
 //
 //  Board.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 12/10/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

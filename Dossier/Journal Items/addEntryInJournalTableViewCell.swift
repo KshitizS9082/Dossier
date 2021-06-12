@@ -1,6 +1,6 @@
 //
 //  addEntryInJournalTableViewCell.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 29/05/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

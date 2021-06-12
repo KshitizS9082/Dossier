@@ -1,6 +1,6 @@
 //
 //  AddTriggerViewController.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 17/12/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

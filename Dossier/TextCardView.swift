@@ -1,6 +1,6 @@
 ////
 ////  TextCardView.swift
-////  Folio
+////  Dossier
 ////
 ////  Created by Kshitiz Developer on 29/06/20.
 ////  Copyright © 2020 Kshitiz Sharma. All rights reserved.

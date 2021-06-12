@@ -1,6 +1,6 @@
 //
 //  KanbanListTableViewCell.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 30/11/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

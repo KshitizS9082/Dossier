@@ -1,6 +1,6 @@
 //
 //  pickImage.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 18/05/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

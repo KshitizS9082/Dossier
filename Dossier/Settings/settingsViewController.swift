@@ -1,6 +1,6 @@
 //
 //  settingsViewController.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 10/06/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.
@@ -41,11 +41,12 @@ class settingsViewController: UIViewController, UITableViewDelegate, UITableView
 //            let cell = table.dequeueReusableCell(withIdentifier: "themeCell")!
 //            return cell
         case 0:
-            let cell = table.dequeueReusableCell(withIdentifier: "cloudSwitchCell") as! settingSwitchTableViewCell
-            cell.type = .icloudSync
-            cell.delegate=self
-            cell.awakeFromNib()
-            return cell
+//            let cell = table.dequeueReusableCell(withIdentifier: "cloudSwitchCell") as! settingSwitchTableViewCell
+//            cell.type = .icloudSync
+//            cell.delegate=self
+//            cell.awakeFromNib()
+//            return cell
+        return UITableViewCell()
         case 1:
             let cell = table.dequeueReusableCell(withIdentifier: "cloudSwitchCell") as! settingSwitchTableViewCell
             cell.delegate=self

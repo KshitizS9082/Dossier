@@ -1,6 +1,6 @@
 //
 //  journalHabitTableViewCell.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 21/06/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.

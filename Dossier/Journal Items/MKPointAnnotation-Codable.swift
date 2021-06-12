@@ -1,6 +1,6 @@
 //
 //  MKPointAnnotation-Codable.swift
-//  Folio
+//  Dossier
 //
 //  Created by Kshitiz Sharma on 31/05/20.
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.
