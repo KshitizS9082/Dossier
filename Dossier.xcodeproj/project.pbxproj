@@ -3,18 +3,98 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D46763C3E34D284E45DA490 /* Pods_DossierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858DCE9E598522F7B897662E /* Pods_DossierTests.framework */; };
+		A36DEE2A3D2607AD5AE16F13 /* Pods_Dossier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4DCAC11EE33DFC9C3CF8BD /* Pods_Dossier.framework */; };
+		E2654E772674E40A003CE06E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2654E762674E40A003CE06E /* Main.storyboard */; };
+		E2654ED22674E424003CE06E /* TextCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E7C2674E423003CE06E /* TextCardView.swift */; };
+		E2654ED32674E424003CE06E /* journalCardFullViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E7E2674E423003CE06E /* journalCardFullViewViewController.swift */; };
+		E2654ED42674E424003CE06E /* journalNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E7F2674E423003CE06E /* journalNotesTableViewCell.swift */; };
+		E2654ED52674E424003CE06E /* journalLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E802674E423003CE06E /* journalLocationPickerViewController.swift */; };
+		E2654ED62674E424003CE06E /* journalHabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E812674E423003CE06E /* journalHabitTableViewCell.swift */; };
+		E2654ED72674E424003CE06E /* journalMediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E822674E423003CE06E /* journalMediaTableViewCell.swift */; };
+		E2654ED82674E424003CE06E /* journalLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E832674E423003CE06E /* journalLocationTableViewCell.swift */; };
+		E2654ED92674E424003CE06E /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E842674E423003CE06E /* DateCell.swift */; };
+		E2654EDA2674E424003CE06E /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E852674E423003CE06E /* DateHeader.swift */; };
+		E2654EDB2674E424003CE06E /* journalImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E862674E423003CE06E /* journalImagePickerManager.swift */; };
+		E2654EDC2674E424003CE06E /* addEntryInJournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E872674E423003CE06E /* addEntryInJournalTableViewCell.swift */; };
+		E2654EDD2674E424003CE06E /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E882674E423003CE06E /* JournalViewController.swift */; };
+		E2654EDE2674E424003CE06E /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E892674E423003CE06E /* MKPointAnnotation-Codable.swift */; };
+		E2654EDF2674E424003CE06E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E8A2674E423003CE06E /* HomePageViewController.swift */; };
+		E2654EE02674E424003CE06E /* addHabbitTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E8C2674E423003CE06E /* addHabbitTitleTableViewCell.swift */; };
+		E2654EE12674E424003CE06E /* addHabbitGoalCountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E8D2674E423003CE06E /* addHabbitGoalCountTableViewCell.swift */; };
+		E2654EE22674E424003CE06E /* addHabbitTargetDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E8E2674E423003CE06E /* addHabbitTargetDateTableViewCell.swift */; };
+		E2654EE32674E424003CE06E /* addHabbitGoalPeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E8F2674E423003CE06E /* addHabbitGoalPeriodTableViewCell.swift */; };
+		E2654EE42674E424003CE06E /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E902674E423003CE06E /* HabitsViewController.swift */; };
+		E2654EE52674E424003CE06E /* habitDateCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E912674E423003CE06E /* habitDateCellHeader.swift */; };
+		E2654EE62674E424003CE06E /* habitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E922674E423003CE06E /* habitsTableViewController.swift */; };
+		E2654EE72674E424003CE06E /* habitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E932674E423003CE06E /* habitTableViewCell.swift */; };
+		E2654EE82674E424003CE06E /* addHabbitReminderValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E942674E423003CE06E /* addHabbitReminderValueTableViewCell.swift */; };
+		E2654EE92674E424003CE06E /* AddHabbitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E952674E423003CE06E /* AddHabbitViewController.swift */; };
+		E2654EEA2674E424003CE06E /* habiCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E962674E423003CE06E /* habiCardData.swift */; };
+		E2654EEB2674E424003CE06E /* habitsCellCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E972674E423003CE06E /* habitsCellCalendarCell.swift */; };
+		E2654EEC2674E424003CE06E /* addHabbitStyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E982674E423003CE06E /* addHabbitStyleTableViewCell.swift */; };
+		E2654EED2674E424003CE06E /* themeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E9A2674E423003CE06E /* themeChooserViewController.swift */; };
+		E2654EEE2674E424003CE06E /* homepageDefaultChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E9B2674E423003CE06E /* homepageDefaultChooserViewController.swift */; };
+		E2654EEF2674E424003CE06E /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E9C2674E423003CE06E /* settingsViewController.swift */; };
+		E2654EF02674E424003CE06E /* weekExtractFromDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E9E2674E424003CE06E /* weekExtractFromDate.swift */; };
+		E2654EF12674E424003CE06E /* UnderlinedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654E9F2674E424003CE06E /* UnderlinedTextView.swift */; };
+		E2654EF22674E424003CE06E /* removeAllConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA02674E424003CE06E /* removeAllConstraints.swift */; };
+		E2654EF32674E424003CE06E /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA12674E424003CE06E /* UITextFieldExtensions.swift */; };
+		E2654EF42674E424003CE06E /* UITextView+Expanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA22674E424003CE06E /* UITextView+Expanding.swift */; };
+		E2654EF52674E424003CE06E /* colorLighterDarkerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA32674E424003CE06E /* colorLighterDarkerExtension.swift */; };
+		E2654EF62674E424003CE06E /* GradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA42674E424003CE06E /* GradientExtension.swift */; };
+		E2654EF72674E424003CE06E /* calendarThisWeekExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA52674E424003CE06E /* calendarThisWeekExtension.swift */; };
+		E2654EF82674E424003CE06E /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA62674E424003CE06E /* DrawingView.swift */; };
+		E2654EF92674E424003CE06E /* UIButtonGradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA72674E424003CE06E /* UIButtonGradientExtension.swift */; };
+		E2654EFA2674E424003CE06E /* doneToDismissTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA82674E424003CE06E /* doneToDismissTextView.swift */; };
+		E2654EFB2674E424003CE06E /* UIImageCompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EA92674E424003CE06E /* UIImageCompressor.swift */; };
+		E2654EFC2674E424003CE06E /* textViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EAA2674E424003CE06E /* textViewPlaceholder.swift */; };
+		E2654EFD2674E424003CE06E /* uniqueFileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EAB2674E424003CE06E /* uniqueFileName.swift */; };
+		E2654EFE2674E424003CE06E /* ImageViewBlurExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EAC2674E424003CE06E /* ImageViewBlurExtension.swift */; };
+		E2654EFF2674E424003CE06E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2654EAD2674E424003CE06E /* Assets.xcassets */; };
+		E2654F002674E424003CE06E /* WalletStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EAE2674E424003CE06E /* WalletStatsViewController.swift */; };
+		E2654F012674E424003CE06E /* walletTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB02674E424003CE06E /* walletTabBar.swift */; };
+		E2654F022674E424003CE06E /* addWalletEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB12674E424003CE06E /* addWalletEntryViewController.swift */; };
+		E2654F032674E424003CE06E /* walletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB22674E424003CE06E /* walletViewController.swift */; };
+		E2654F042674E424003CE06E /* walletTableViewSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB32674E424003CE06E /* walletTableViewSectionHeaderView.swift */; };
+		E2654F052674E424003CE06E /* wallletTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB42674E424003CE06E /* wallletTabBarController.swift */; };
+		E2654F062674E424003CE06E /* walletEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB52674E424003CE06E /* walletEntryTableViewCell.swift */; };
+		E2654F072674E424003CE06E /* ImagedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB72674E424003CE06E /* ImagedData.swift */; };
+		E2654F082674E424003CE06E /* PageListSideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EB82674E424003CE06E /* PageListSideMenuTableViewController.swift */; };
+		E2654F092674E424003CE06E /* EditCommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EBA2674E424003CE06E /* EditCommandViewController.swift */; };
+		E2654F0A2674E424003CE06E /* addBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EBB2674E424003CE06E /* addBoardCollectionViewCell.swift */; };
+		E2654F0B2674E424003CE06E /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EBC2674E424003CE06E /* Board.swift */; };
+		E2654F0C2674E424003CE06E /* KanbanListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EBD2674E424003CE06E /* KanbanListTableViewCell.swift */; };
+		E2654F0D2674E424003CE06E /* KanbanListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EBE2674E424003CE06E /* KanbanListViewController.swift */; };
+		E2654F0E2674E424003CE06E /* kanbanAutomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EBF2674E424003CE06E /* kanbanAutomation.swift */; };
+		E2654F0F2674E424003CE06E /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC02674E424003CE06E /* CardTableViewCell.swift */; };
+		E2654F102674E424003CE06E /* KanbanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC12674E424003CE06E /* KanbanCard.swift */; };
+		E2654F112674E424003CE06E /* CardPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC22674E424003CE06E /* CardPreviewViewController.swift */; };
+		E2654F122674E424003CE06E /* switchKanbanTimelineTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC32674E424003CE06E /* switchKanbanTimelineTabBarController.swift */; };
+		E2654F132674E424003CE06E /* NewKanbanTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC42674E424003CE06E /* NewKanbanTimelineViewController.swift */; };
+		E2654F142674E424003CE06E /* AddTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC52674E424003CE06E /* AddTriggerViewController.swift */; };
+		E2654F152674E424003CE06E /* BoardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC62674E424003CE06E /* BoardCollectionViewController.swift */; };
+		E2654F162674E424003CE06E /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC72674E424003CE06E /* BoardCollectionViewCell.swift */; };
+		E2654F172674E424003CE06E /* AddAutomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC82674E424003CE06E /* AddAutomationViewController.swift */; };
+		E2654F182674E424003CE06E /* AddActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654EC92674E424003CE06E /* AddActionViewController.swift */; };
+		E2654F192674E424003CE06E /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654ECB2674E424003CE06E /* ImagePickerManager.swift */; };
+		E2654F1A2674E424003CE06E /* Extensions0.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654ECC2674E424003CE06E /* Extensions0.swift */; };
+		E2654F1B2674E424003CE06E /* ThumbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654ECD2674E424003CE06E /* ThumbCell.swift */; };
+		E2654F1C2674E424003CE06E /* GalleryFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654ECE2674E424003CE06E /* GalleryFlowLayout.swift */; };
+		E2654F1D2674E424003CE06E /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654ECF2674E424003CE06E /* GalleryViewController.swift */; };
+		E2654F1E2674E424003CE06E /* pickImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2654ED02674E424003CE06E /* pickImage.swift */; };
 		E2C84A742674E2960082EACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C84A732674E2960082EACB /* AppDelegate.swift */; };
 		E2C84A762674E2960082EACB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C84A752674E2960082EACB /* SceneDelegate.swift */; };
 		E2C84A782674E2960082EACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C84A772674E2960082EACB /* ViewController.swift */; };
-		E2C84A7B2674E2970082EACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C84A792674E2970082EACB /* Main.storyboard */; };
 		E2C84A7D2674E29F0082EACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C84A7C2674E29F0082EACB /* Assets.xcassets */; };
 		E2C84A802674E29F0082EACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C84A7E2674E29F0082EACB /* LaunchScreen.storyboard */; };
 		E2C84A8B2674E29F0082EACB /* DossierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C84A8A2674E29F0082EACB /* DossierTests.swift */; };
 		E2C84A962674E29F0082EACB /* DossierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C84A952674E29F0082EACB /* DossierUITests.swift */; };
+		F3B408CCE626905045769A72 /* Pods_Dossier_DossierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1D2FAB15D90A521E568770 /* Pods_Dossier_DossierUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +115,96 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B1D2FAB15D90A521E568770 /* Pods_Dossier_DossierUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dossier_DossierUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4DCAC11EE33DFC9C3CF8BD /* Pods_Dossier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dossier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		424BD08FCA706C7DF1059D4D /* Pods-Dossier-DossierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dossier-DossierUITests.release.xcconfig"; path = "Target Support Files/Pods-Dossier-DossierUITests/Pods-Dossier-DossierUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4AD10E50D8D56DA13B7878C1 /* Pods-DossierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DossierTests.debug.xcconfig"; path = "Target Support Files/Pods-DossierTests/Pods-DossierTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C50212A7BC0648256C5EEA7 /* Pods-Dossier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dossier.debug.xcconfig"; path = "Target Support Files/Pods-Dossier/Pods-Dossier.debug.xcconfig"; sourceTree = "<group>"; };
+		7E412B6BB652851E3D3D1A14 /* Pods-DossierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DossierTests.release.xcconfig"; path = "Target Support Files/Pods-DossierTests/Pods-DossierTests.release.xcconfig"; sourceTree = "<group>"; };
+		858DCE9E598522F7B897662E /* Pods_DossierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DossierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7CF5BBB2775250D14D31CC /* Pods-Dossier-DossierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dossier-DossierUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dossier-DossierUITests/Pods-Dossier-DossierUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2654E762674E40A003CE06E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E2654E7C2674E423003CE06E /* TextCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCardView.swift; sourceTree = "<group>"; };
+		E2654E7E2674E423003CE06E /* journalCardFullViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalCardFullViewViewController.swift; sourceTree = "<group>"; };
+		E2654E7F2674E423003CE06E /* journalNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalNotesTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E802674E423003CE06E /* journalLocationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalLocationPickerViewController.swift; sourceTree = "<group>"; };
+		E2654E812674E423003CE06E /* journalHabitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalHabitTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E822674E423003CE06E /* journalMediaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalMediaTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E832674E423003CE06E /* journalLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalLocationTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E842674E423003CE06E /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		E2654E852674E423003CE06E /* DateHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		E2654E862674E423003CE06E /* journalImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = journalImagePickerManager.swift; sourceTree = "<group>"; };
+		E2654E872674E423003CE06E /* addEntryInJournalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addEntryInJournalTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E882674E423003CE06E /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		E2654E892674E423003CE06E /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
+		E2654E8A2674E423003CE06E /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		E2654E8C2674E423003CE06E /* addHabbitTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHabbitTitleTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E8D2674E423003CE06E /* addHabbitGoalCountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHabbitGoalCountTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E8E2674E423003CE06E /* addHabbitTargetDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHabbitTargetDateTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E8F2674E423003CE06E /* addHabbitGoalPeriodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHabbitGoalPeriodTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E902674E423003CE06E /* HabitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		E2654E912674E423003CE06E /* habitDateCellHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = habitDateCellHeader.swift; sourceTree = "<group>"; };
+		E2654E922674E423003CE06E /* habitsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = habitsTableViewController.swift; sourceTree = "<group>"; };
+		E2654E932674E423003CE06E /* habitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = habitTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E942674E423003CE06E /* addHabbitReminderValueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHabbitReminderValueTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E952674E423003CE06E /* AddHabbitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHabbitViewController.swift; sourceTree = "<group>"; };
+		E2654E962674E423003CE06E /* habiCardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = habiCardData.swift; sourceTree = "<group>"; };
+		E2654E972674E423003CE06E /* habitsCellCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = habitsCellCalendarCell.swift; sourceTree = "<group>"; };
+		E2654E982674E423003CE06E /* addHabbitStyleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHabbitStyleTableViewCell.swift; sourceTree = "<group>"; };
+		E2654E9A2674E423003CE06E /* themeChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = themeChooserViewController.swift; sourceTree = "<group>"; };
+		E2654E9B2674E423003CE06E /* homepageDefaultChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homepageDefaultChooserViewController.swift; sourceTree = "<group>"; };
+		E2654E9C2674E423003CE06E /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		E2654E9E2674E424003CE06E /* weekExtractFromDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weekExtractFromDate.swift; sourceTree = "<group>"; };
+		E2654E9F2674E424003CE06E /* UnderlinedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextView.swift; sourceTree = "<group>"; };
+		E2654EA02674E424003CE06E /* removeAllConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = removeAllConstraints.swift; sourceTree = "<group>"; };
+		E2654EA12674E424003CE06E /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		E2654EA22674E424003CE06E /* UITextView+Expanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Expanding.swift"; sourceTree = "<group>"; };
+		E2654EA32674E424003CE06E /* colorLighterDarkerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorLighterDarkerExtension.swift; sourceTree = "<group>"; };
+		E2654EA42674E424003CE06E /* GradientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientExtension.swift; sourceTree = "<group>"; };
+		E2654EA52674E424003CE06E /* calendarThisWeekExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarThisWeekExtension.swift; sourceTree = "<group>"; };
+		E2654EA62674E424003CE06E /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		E2654EA72674E424003CE06E /* UIButtonGradientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonGradientExtension.swift; sourceTree = "<group>"; };
+		E2654EA82674E424003CE06E /* doneToDismissTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = doneToDismissTextView.swift; sourceTree = "<group>"; };
+		E2654EA92674E424003CE06E /* UIImageCompressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageCompressor.swift; sourceTree = "<group>"; };
+		E2654EAA2674E424003CE06E /* textViewPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textViewPlaceholder.swift; sourceTree = "<group>"; };
+		E2654EAB2674E424003CE06E /* uniqueFileName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uniqueFileName.swift; sourceTree = "<group>"; };
+		E2654EAC2674E424003CE06E /* ImageViewBlurExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewBlurExtension.swift; sourceTree = "<group>"; };
+		E2654EAD2674E424003CE06E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Folio copy 2/Dossier/Assets.xcassets"; sourceTree = "<group>"; };
+		E2654EAE2674E424003CE06E /* WalletStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletStatsViewController.swift; sourceTree = "<group>"; };
+		E2654EB02674E424003CE06E /* walletTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walletTabBar.swift; sourceTree = "<group>"; };
+		E2654EB12674E424003CE06E /* addWalletEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addWalletEntryViewController.swift; sourceTree = "<group>"; };
+		E2654EB22674E424003CE06E /* walletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walletViewController.swift; sourceTree = "<group>"; };
+		E2654EB32674E424003CE06E /* walletTableViewSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walletTableViewSectionHeaderView.swift; sourceTree = "<group>"; };
+		E2654EB42674E424003CE06E /* wallletTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wallletTabBarController.swift; sourceTree = "<group>"; };
+		E2654EB52674E424003CE06E /* walletEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walletEntryTableViewCell.swift; sourceTree = "<group>"; };
+		E2654EB72674E424003CE06E /* ImagedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagedData.swift; sourceTree = "<group>"; };
+		E2654EB82674E424003CE06E /* PageListSideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageListSideMenuTableViewController.swift; sourceTree = "<group>"; };
+		E2654EBA2674E424003CE06E /* EditCommandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCommandViewController.swift; sourceTree = "<group>"; };
+		E2654EBB2674E424003CE06E /* addBoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2654EBC2674E424003CE06E /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		E2654EBD2674E424003CE06E /* KanbanListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanbanListTableViewCell.swift; sourceTree = "<group>"; };
+		E2654EBE2674E424003CE06E /* KanbanListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanbanListViewController.swift; sourceTree = "<group>"; };
+		E2654EBF2674E424003CE06E /* kanbanAutomation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kanbanAutomation.swift; sourceTree = "<group>"; };
+		E2654EC02674E424003CE06E /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		E2654EC12674E424003CE06E /* KanbanCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanbanCard.swift; sourceTree = "<group>"; };
+		E2654EC22674E424003CE06E /* CardPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPreviewViewController.swift; sourceTree = "<group>"; };
+		E2654EC32674E424003CE06E /* switchKanbanTimelineTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = switchKanbanTimelineTabBarController.swift; sourceTree = "<group>"; };
+		E2654EC42674E424003CE06E /* NewKanbanTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewKanbanTimelineViewController.swift; sourceTree = "<group>"; };
+		E2654EC52674E424003CE06E /* AddTriggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTriggerViewController.swift; sourceTree = "<group>"; };
+		E2654EC62674E424003CE06E /* BoardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewController.swift; sourceTree = "<group>"; };
+		E2654EC72674E424003CE06E /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2654EC82674E424003CE06E /* AddAutomationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAutomationViewController.swift; sourceTree = "<group>"; };
+		E2654EC92674E424003CE06E /* AddActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActionViewController.swift; sourceTree = "<group>"; };
+		E2654ECB2674E424003CE06E /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		E2654ECC2674E424003CE06E /* Extensions0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions0.swift; sourceTree = "<group>"; };
+		E2654ECD2674E424003CE06E /* ThumbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbCell.swift; sourceTree = "<group>"; };
+		E2654ECE2674E424003CE06E /* GalleryFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryFlowLayout.swift; sourceTree = "<group>"; };
+		E2654ECF2674E424003CE06E /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		E2654ED02674E424003CE06E /* pickImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pickImage.swift; sourceTree = "<group>"; };
 		E2C84A702674E2960082EACB /* Dossier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dossier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C84A732674E2960082EACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C84A752674E2960082EACB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2C84A772674E2960082EACB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2C84A7A2674E2970082EACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2C84A7C2674E29F0082EACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C84A7F2674E29F0082EACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C84A812674E29F0082EACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +214,7 @@
 		E2C84A912674E29F0082EACB /* DossierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DossierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C84A952674E29F0082EACB /* DossierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DossierUITests.swift; sourceTree = "<group>"; };
 		E2C84A972674E29F0082EACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F927B1AF1B55F0446F134850 /* Pods-Dossier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dossier.release.xcconfig"; path = "Target Support Files/Pods-Dossier/Pods-Dossier.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36DEE2A3D2607AD5AE16F13 /* Pods_Dossier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D46763C3E34D284E45DA490 /* Pods_DossierTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +238,164 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B408CCE626905045769A72 /* Pods_Dossier_DossierUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1B66243AB4F72780133E3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4DCAC11EE33DFC9C3CF8BD /* Pods_Dossier.framework */,
+				0B1D2FAB15D90A521E568770 /* Pods_Dossier_DossierUITests.framework */,
+				858DCE9E598522F7B897662E /* Pods_DossierTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9D8EB2DBE7E101B845251BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C50212A7BC0648256C5EEA7 /* Pods-Dossier.debug.xcconfig */,
+				F927B1AF1B55F0446F134850 /* Pods-Dossier.release.xcconfig */,
+				DA7CF5BBB2775250D14D31CC /* Pods-Dossier-DossierUITests.debug.xcconfig */,
+				424BD08FCA706C7DF1059D4D /* Pods-Dossier-DossierUITests.release.xcconfig */,
+				4AD10E50D8D56DA13B7878C1 /* Pods-DossierTests.debug.xcconfig */,
+				7E412B6BB652851E3D3D1A14 /* Pods-DossierTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2654E7D2674E423003CE06E /* Journal Items */ = {
+			isa = PBXGroup;
+			children = (
+				E2654E7E2674E423003CE06E /* journalCardFullViewViewController.swift */,
+				E2654E7F2674E423003CE06E /* journalNotesTableViewCell.swift */,
+				E2654E802674E423003CE06E /* journalLocationPickerViewController.swift */,
+				E2654E812674E423003CE06E /* journalHabitTableViewCell.swift */,
+				E2654E822674E423003CE06E /* journalMediaTableViewCell.swift */,
+				E2654E832674E423003CE06E /* journalLocationTableViewCell.swift */,
+				E2654E842674E423003CE06E /* DateCell.swift */,
+				E2654E852674E423003CE06E /* DateHeader.swift */,
+				E2654E862674E423003CE06E /* journalImagePickerManager.swift */,
+				E2654E872674E423003CE06E /* addEntryInJournalTableViewCell.swift */,
+				E2654E882674E423003CE06E /* JournalViewController.swift */,
+				E2654E892674E423003CE06E /* MKPointAnnotation-Codable.swift */,
+			);
+			path = "Journal Items";
+			sourceTree = "<group>";
+		};
+		E2654E8B2674E423003CE06E /* Habits Items */ = {
+			isa = PBXGroup;
+			children = (
+				E2654E8C2674E423003CE06E /* addHabbitTitleTableViewCell.swift */,
+				E2654E8D2674E423003CE06E /* addHabbitGoalCountTableViewCell.swift */,
+				E2654E8E2674E423003CE06E /* addHabbitTargetDateTableViewCell.swift */,
+				E2654E8F2674E423003CE06E /* addHabbitGoalPeriodTableViewCell.swift */,
+				E2654E902674E423003CE06E /* HabitsViewController.swift */,
+				E2654E912674E423003CE06E /* habitDateCellHeader.swift */,
+				E2654E922674E423003CE06E /* habitsTableViewController.swift */,
+				E2654E932674E423003CE06E /* habitTableViewCell.swift */,
+				E2654E942674E423003CE06E /* addHabbitReminderValueTableViewCell.swift */,
+				E2654E952674E423003CE06E /* AddHabbitViewController.swift */,
+				E2654E962674E423003CE06E /* habiCardData.swift */,
+				E2654E972674E423003CE06E /* habitsCellCalendarCell.swift */,
+				E2654E982674E423003CE06E /* addHabbitStyleTableViewCell.swift */,
+			);
+			path = "Habits Items";
+			sourceTree = "<group>";
+		};
+		E2654E992674E423003CE06E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E2654E9A2674E423003CE06E /* themeChooserViewController.swift */,
+				E2654E9B2674E423003CE06E /* homepageDefaultChooserViewController.swift */,
+				E2654E9C2674E423003CE06E /* settingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E2654E9D2674E424003CE06E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2654E9E2674E424003CE06E /* weekExtractFromDate.swift */,
+				E2654E9F2674E424003CE06E /* UnderlinedTextView.swift */,
+				E2654EA02674E424003CE06E /* removeAllConstraints.swift */,
+				E2654EA12674E424003CE06E /* UITextFieldExtensions.swift */,
+				E2654EA22674E424003CE06E /* UITextView+Expanding.swift */,
+				E2654EA32674E424003CE06E /* colorLighterDarkerExtension.swift */,
+				E2654EA42674E424003CE06E /* GradientExtension.swift */,
+				E2654EA52674E424003CE06E /* calendarThisWeekExtension.swift */,
+				E2654EA62674E424003CE06E /* DrawingView.swift */,
+				E2654EA72674E424003CE06E /* UIButtonGradientExtension.swift */,
+				E2654EA82674E424003CE06E /* doneToDismissTextView.swift */,
+				E2654EA92674E424003CE06E /* UIImageCompressor.swift */,
+				E2654EAA2674E424003CE06E /* textViewPlaceholder.swift */,
+				E2654EAB2674E424003CE06E /* uniqueFileName.swift */,
+				E2654EAC2674E424003CE06E /* ImageViewBlurExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2654EAF2674E424003CE06E /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				E2654EB02674E424003CE06E /* walletTabBar.swift */,
+				E2654EB12674E424003CE06E /* addWalletEntryViewController.swift */,
+				E2654EB22674E424003CE06E /* walletViewController.swift */,
+				E2654EB32674E424003CE06E /* walletTableViewSectionHeaderView.swift */,
+				E2654EB42674E424003CE06E /* wallletTabBarController.swift */,
+				E2654EB52674E424003CE06E /* walletEntryTableViewCell.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		E2654EB62674E424003CE06E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2654EB72674E424003CE06E /* ImagedData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2654EB92674E424003CE06E /* Kanban */ = {
+			isa = PBXGroup;
+			children = (
+				E2654EBA2674E424003CE06E /* EditCommandViewController.swift */,
+				E2654EBB2674E424003CE06E /* addBoardCollectionViewCell.swift */,
+				E2654EBC2674E424003CE06E /* Board.swift */,
+				E2654EBD2674E424003CE06E /* KanbanListTableViewCell.swift */,
+				E2654EBE2674E424003CE06E /* KanbanListViewController.swift */,
+				E2654EBF2674E424003CE06E /* kanbanAutomation.swift */,
+				E2654EC02674E424003CE06E /* CardTableViewCell.swift */,
+				E2654EC12674E424003CE06E /* KanbanCard.swift */,
+				E2654EC22674E424003CE06E /* CardPreviewViewController.swift */,
+				E2654EC32674E424003CE06E /* switchKanbanTimelineTabBarController.swift */,
+				E2654EC42674E424003CE06E /* NewKanbanTimelineViewController.swift */,
+				E2654EC52674E424003CE06E /* AddTriggerViewController.swift */,
+				E2654EC62674E424003CE06E /* BoardCollectionViewController.swift */,
+				E2654EC72674E424003CE06E /* BoardCollectionViewCell.swift */,
+				E2654EC82674E424003CE06E /* AddAutomationViewController.swift */,
+				E2654EC92674E424003CE06E /* AddActionViewController.swift */,
+			);
+			path = Kanban;
+			sourceTree = "<group>";
+		};
+		E2654ECA2674E424003CE06E /* Media Card Items */ = {
+			isa = PBXGroup;
+			children = (
+				E2654ECB2674E424003CE06E /* ImagePickerManager.swift */,
+				E2654ECC2674E424003CE06E /* Extensions0.swift */,
+				E2654ECD2674E424003CE06E /* ThumbCell.swift */,
+				E2654ECE2674E424003CE06E /* GalleryFlowLayout.swift */,
+				E2654ECF2674E424003CE06E /* GalleryViewController.swift */,
+				E2654ED02674E424003CE06E /* pickImage.swift */,
+			);
+			path = "Media Card Items";
+			sourceTree = "<group>";
+		};
 		E2C84A672674E2960082EACB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +403,8 @@
 				E2C84A892674E29F0082EACB /* DossierTests */,
 				E2C84A942674E29F0082EACB /* DossierUITests */,
 				E2C84A712674E2960082EACB /* Products */,
+				B9D8EB2DBE7E101B845251BC /* Pods */,
+				A1B66243AB4F72780133E3E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +421,23 @@
 		E2C84A722674E2960082EACB /* Dossier */ = {
 			isa = PBXGroup;
 			children = (
-				E2C84A732674E2960082EACB /* AppDelegate.swift */,
-				E2C84A752674E2960082EACB /* SceneDelegate.swift */,
+				E2C84AA62674E2CC0082EACB /* Supporters */,
+				E2654EAD2674E424003CE06E /* Assets.xcassets */,
+				E2654E9D2674E424003CE06E /* Extensions */,
+				E2654E8B2674E423003CE06E /* Habits Items */,
+				E2654E8A2674E423003CE06E /* HomePageViewController.swift */,
+				E2654E7D2674E423003CE06E /* Journal Items */,
+				E2654EB92674E424003CE06E /* Kanban */,
+				E2654ECA2674E424003CE06E /* Media Card Items */,
+				E2654EB62674E424003CE06E /* Model */,
+				E2654EB82674E424003CE06E /* PageListSideMenuTableViewController.swift */,
+				E2654E992674E423003CE06E /* Settings */,
+				E2654E7C2674E423003CE06E /* TextCardView.swift */,
 				E2C84A772674E2960082EACB /* ViewController.swift */,
-				E2C84A792674E2970082EACB /* Main.storyboard */,
+				E2654E762674E40A003CE06E /* Main.storyboard */,
 				E2C84A7C2674E29F0082EACB /* Assets.xcassets */,
-				E2C84A7E2674E29F0082EACB /* LaunchScreen.storyboard */,
+				E2654EAF2674E424003CE06E /* Wallet */,
+				E2654EAE2674E424003CE06E /* WalletStatsViewController.swift */,
 				E2C84A812674E29F0082EACB /* Info.plist */,
 			);
 			path = Dossier;
@@ -128,6 +461,16 @@
 			path = DossierUITests;
 			sourceTree = "<group>";
 		};
+		E2C84AA62674E2CC0082EACB /* Supporters */ = {
+			isa = PBXGroup;
+			children = (
+				E2C84A732674E2960082EACB /* AppDelegate.swift */,
+				E2C84A752674E2960082EACB /* SceneDelegate.swift */,
+				E2C84A7E2674E29F0082EACB /* LaunchScreen.storyboard */,
+			);
+			path = Supporters;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +478,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2C84A9A2674E29F0082EACB /* Build configuration list for PBXNativeTarget "Dossier" */;
 			buildPhases = (
+				EA46741AE1774C2F5E7CC420 /* [CP] Check Pods Manifest.lock */,
 				E2C84A6C2674E2960082EACB /* Sources */,
 				E2C84A6D2674E2960082EACB /* Frameworks */,
 				E2C84A6E2674E2960082EACB /* Resources */,
+				E77BD439F5481C1DEB439221 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +497,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2C84A9D2674E29F0082EACB /* Build configuration list for PBXNativeTarget "DossierTests" */;
 			buildPhases = (
+				C223ECDE238CB78BE0650322 /* [CP] Check Pods Manifest.lock */,
 				E2C84A822674E29F0082EACB /* Sources */,
 				E2C84A832674E29F0082EACB /* Frameworks */,
 				E2C84A842674E29F0082EACB /* Resources */,
@@ -170,9 +516,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2C84AA02674E29F0082EACB /* Build configuration list for PBXNativeTarget "DossierUITests" */;
 			buildPhases = (
+				7CF43ADE20C0A3303D7F8C8C /* [CP] Check Pods Manifest.lock */,
 				E2C84A8D2674E29F0082EACB /* Sources */,
 				E2C84A8E2674E29F0082EACB /* Frameworks */,
 				E2C84A8F2674E29F0082EACB /* Resources */,
+				7600443A20198CB65DFF617C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +579,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2654E772674E40A003CE06E /* Main.storyboard in Resources */,
 				E2C84A802674E29F0082EACB /* LaunchScreen.storyboard in Resources */,
+				E2654EFF2674E424003CE06E /* Assets.xcassets in Resources */,
 				E2C84A7D2674E29F0082EACB /* Assets.xcassets in Resources */,
-				E2C84A7B2674E2970082EACB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +602,193 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7600443A20198CB65DFF617C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dossier-DossierUITests/Pods-Dossier-DossierUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dossier-DossierUITests/Pods-Dossier-DossierUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dossier-DossierUITests/Pods-Dossier-DossierUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF43ADE20C0A3303D7F8C8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dossier-DossierUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C223ECDE238CB78BE0650322 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DossierTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77BD439F5481C1DEB439221 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dossier/Pods-Dossier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dossier/Pods-Dossier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dossier/Pods-Dossier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA46741AE1774C2F5E7CC420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dossier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2C84A6C2674E2960082EACB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2654F022674E424003CE06E /* addWalletEntryViewController.swift in Sources */,
+				E2654EED2674E424003CE06E /* themeChooserViewController.swift in Sources */,
+				E2654F182674E424003CE06E /* AddActionViewController.swift in Sources */,
+				E2654EE82674E424003CE06E /* addHabbitReminderValueTableViewCell.swift in Sources */,
+				E2654EDD2674E424003CE06E /* JournalViewController.swift in Sources */,
+				E2654EE62674E424003CE06E /* habitsTableViewController.swift in Sources */,
+				E2654F122674E424003CE06E /* switchKanbanTimelineTabBarController.swift in Sources */,
+				E2654ED82674E424003CE06E /* journalLocationTableViewCell.swift in Sources */,
+				E2654EF32674E424003CE06E /* UITextFieldExtensions.swift in Sources */,
+				E2654EF22674E424003CE06E /* removeAllConstraints.swift in Sources */,
+				E2654EDF2674E424003CE06E /* HomePageViewController.swift in Sources */,
+				E2654EF52674E424003CE06E /* colorLighterDarkerExtension.swift in Sources */,
+				E2654EE02674E424003CE06E /* addHabbitTitleTableViewCell.swift in Sources */,
+				E2654EE92674E424003CE06E /* AddHabbitViewController.swift in Sources */,
+				E2654EEE2674E424003CE06E /* homepageDefaultChooserViewController.swift in Sources */,
+				E2654ED62674E424003CE06E /* journalHabitTableViewCell.swift in Sources */,
+				E2654EF82674E424003CE06E /* DrawingView.swift in Sources */,
+				E2654EDC2674E424003CE06E /* addEntryInJournalTableViewCell.swift in Sources */,
+				E2654EEC2674E424003CE06E /* addHabbitStyleTableViewCell.swift in Sources */,
+				E2654ED22674E424003CE06E /* TextCardView.swift in Sources */,
+				E2654F042674E424003CE06E /* walletTableViewSectionHeaderView.swift in Sources */,
 				E2C84A782674E2960082EACB /* ViewController.swift in Sources */,
+				E2654F142674E424003CE06E /* AddTriggerViewController.swift in Sources */,
+				E2654EF72674E424003CE06E /* calendarThisWeekExtension.swift in Sources */,
 				E2C84A742674E2960082EACB /* AppDelegate.swift in Sources */,
+				E2654F0A2674E424003CE06E /* addBoardCollectionViewCell.swift in Sources */,
+				E2654F192674E424003CE06E /* ImagePickerManager.swift in Sources */,
+				E2654EDA2674E424003CE06E /* DateHeader.swift in Sources */,
+				E2654F0B2674E424003CE06E /* Board.swift in Sources */,
+				E2654EFC2674E424003CE06E /* textViewPlaceholder.swift in Sources */,
+				E2654F172674E424003CE06E /* AddAutomationViewController.swift in Sources */,
+				E2654EFE2674E424003CE06E /* ImageViewBlurExtension.swift in Sources */,
+				E2654ED72674E424003CE06E /* journalMediaTableViewCell.swift in Sources */,
+				E2654F0C2674E424003CE06E /* KanbanListTableViewCell.swift in Sources */,
+				E2654F012674E424003CE06E /* walletTabBar.swift in Sources */,
+				E2654F1D2674E424003CE06E /* GalleryViewController.swift in Sources */,
+				E2654EF12674E424003CE06E /* UnderlinedTextView.swift in Sources */,
+				E2654EF92674E424003CE06E /* UIButtonGradientExtension.swift in Sources */,
+				E2654EF62674E424003CE06E /* GradientExtension.swift in Sources */,
+				E2654EDB2674E424003CE06E /* journalImagePickerManager.swift in Sources */,
+				E2654EE42674E424003CE06E /* HabitsViewController.swift in Sources */,
+				E2654EF42674E424003CE06E /* UITextView+Expanding.swift in Sources */,
+				E2654EEB2674E424003CE06E /* habitsCellCalendarCell.swift in Sources */,
+				E2654EDE2674E424003CE06E /* MKPointAnnotation-Codable.swift in Sources */,
+				E2654EE32674E424003CE06E /* addHabbitGoalPeriodTableViewCell.swift in Sources */,
+				E2654F1A2674E424003CE06E /* Extensions0.swift in Sources */,
+				E2654EE12674E424003CE06E /* addHabbitGoalCountTableViewCell.swift in Sources */,
+				E2654F132674E424003CE06E /* NewKanbanTimelineViewController.swift in Sources */,
+				E2654EFA2674E424003CE06E /* doneToDismissTextView.swift in Sources */,
+				E2654EE72674E424003CE06E /* habitTableViewCell.swift in Sources */,
+				E2654F0D2674E424003CE06E /* KanbanListViewController.swift in Sources */,
+				E2654F1E2674E424003CE06E /* pickImage.swift in Sources */,
+				E2654F162674E424003CE06E /* BoardCollectionViewCell.swift in Sources */,
+				E2654ED92674E424003CE06E /* DateCell.swift in Sources */,
+				E2654ED32674E424003CE06E /* journalCardFullViewViewController.swift in Sources */,
+				E2654F002674E424003CE06E /* WalletStatsViewController.swift in Sources */,
+				E2654EE52674E424003CE06E /* habitDateCellHeader.swift in Sources */,
+				E2654EFD2674E424003CE06E /* uniqueFileName.swift in Sources */,
+				E2654EFB2674E424003CE06E /* UIImageCompressor.swift in Sources */,
+				E2654ED52674E424003CE06E /* journalLocationPickerViewController.swift in Sources */,
+				E2654F052674E424003CE06E /* wallletTabBarController.swift in Sources */,
+				E2654F102674E424003CE06E /* KanbanCard.swift in Sources */,
+				E2654F082674E424003CE06E /* PageListSideMenuTableViewController.swift in Sources */,
+				E2654F152674E424003CE06E /* BoardCollectionViewController.swift in Sources */,
+				E2654ED42674E424003CE06E /* journalNotesTableViewCell.swift in Sources */,
 				E2C84A762674E2960082EACB /* SceneDelegate.swift in Sources */,
+				E2654F092674E424003CE06E /* EditCommandViewController.swift in Sources */,
+				E2654F032674E424003CE06E /* walletViewController.swift in Sources */,
+				E2654EEF2674E424003CE06E /* settingsViewController.swift in Sources */,
+				E2654EE22674E424003CE06E /* addHabbitTargetDateTableViewCell.swift in Sources */,
+				E2654EF02674E424003CE06E /* weekExtractFromDate.swift in Sources */,
+				E2654F0F2674E424003CE06E /* CardTableViewCell.swift in Sources */,
+				E2654F072674E424003CE06E /* ImagedData.swift in Sources */,
+				E2654F1B2674E424003CE06E /* ThumbCell.swift in Sources */,
+				E2654F0E2674E424003CE06E /* kanbanAutomation.swift in Sources */,
+				E2654F112674E424003CE06E /* CardPreviewViewController.swift in Sources */,
+				E2654EEA2674E424003CE06E /* habiCardData.swift in Sources */,
+				E2654F1C2674E424003CE06E /* GalleryFlowLayout.swift in Sources */,
+				E2654F062674E424003CE06E /* walletEntryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +824,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E2C84A792674E2970082EACB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2C84A7A2674E2970082EACB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E2C84A7E2674E29F0082EACB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +953,7 @@
 		};
 		E2C84A9B2674E29F0082EACB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C50212A7BC0648256C5EEA7 /* Pods-Dossier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +973,7 @@
 		};
 		E2C84A9C2674E29F0082EACB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F927B1AF1B55F0446F134850 /* Pods-Dossier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +993,7 @@
 		};
 		E2C84A9E2674E29F0082EACB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD10E50D8D56DA13B7878C1 /* Pods-DossierTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +1016,7 @@
 		};
 		E2C84A9F2674E29F0082EACB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E412B6BB652851E3D3D1A14 /* Pods-DossierTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +1039,7 @@
 		};
 		E2C84AA12674E29F0082EACB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7CF5BBB2775250D14D31CC /* Pods-Dossier-DossierUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +1060,7 @@
 		};
 		E2C84AA22674E29F0082EACB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424BD08FCA706C7DF1059D4D /* Pods-Dossier-DossierUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
