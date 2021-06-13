@@ -853,7 +853,7 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
     }
     
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-        print("done")
+        print("imagePicker done")
         let fileName=String.uniqueFilename(withPrefix: "kabanCardImageData")+".json"
         if images.count>0{
             let image = images[0]
@@ -882,7 +882,8 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
     }
     
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
-        print("delete")
+        imagePicker.dismiss(animated: true, completion: nil)
+        print("imagePicker cancelButtonDidPress")
     }
     
     var imageCornerRadius: CGFloat{
