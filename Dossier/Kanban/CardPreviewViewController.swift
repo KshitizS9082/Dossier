@@ -817,6 +817,7 @@ class mediaKabanPreviewCollectionViewCell: UICollectionViewCell{
                         if let image = UIImage(data: x){
                             DispatchQueue.main.async {
                                 self.imageView.image = image
+                                self.imageView.setupImageViewer()
                             }
                         }
                     }else{
@@ -839,7 +840,7 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
         cell.layer.cornerRadius=imageCornerRadius
         cell.layer.masksToBounds=true
         cell.setImageLink(fileName: mediaLinks[indexPath.row])
-        cell.imageView.setupImageViewer()
+//        cell.imageView.setupImageViewer()
 //        cell.imageView.setupImageViewer(images: allImages, initialIndex: indexPath.item)
         return cell
     }
