@@ -225,13 +225,13 @@ class journalFullViewImageCell: UITableViewCell{
     var delegate: journalFullViewTableProtocol?
     var index = IndexPath()
     @IBOutlet weak var journalImage: UIImageView!
-    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var myheightConstraint: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         if journalImage.image==nil{
-            self.heightConstraint.constant=0
+            self.myheightConstraint.constant=0
         }else{
-            self.heightConstraint.constant=250
+            self.myheightConstraint.constant=250
         }
         delegate?.updated(inded: index)
     }

@@ -8,6 +8,7 @@
 import UIKit
 import ImagePicker
 import SafariServices
+import YPImagePicker
 
 
 protocol cardPreviewTableProtocol {
@@ -770,10 +771,50 @@ class addMediaKabanCell: UITableViewCell{
     }
     @objc func addImage(){
         print("add image")
-        let imagePickerController = ImagePickerController()
-        imagePickerController.imageLimit = 1
-        imagePickerController.delegate = self
-        delegate?.preseintViewController(vc: imagePickerController)
+//        let imagePickerController = ImagePickerController()
+//        imagePickerController.imageLimit = 1
+//        imagePickerController.delegate = self
+//        delegate?.preseintViewController(vc: imagePickerController)
+        var config = YPImagePickerConfiguration()
+//        config.showsPhotoFilters=false
+        let picker = YPImagePicker(configuration: config)
+        
+        picker.didFinishPicking { [unowned picker] items, _ in
+            if let photo = items.singlePhoto {
+//                print(photo.fromCamera) // Image source (camera or library)
+//                print("photo.image", photo.image) // Final image selected by the user
+//                print(photo.originalImage) // original image selected by the user, unfiltered
+//                print(photo.modifiedImage) // Transformed image, can be nil
+//                print(photo.exifMeta) // Print exif meta data of original image.
+                var finalImage = photo.modifiedImage ?? photo.originalImage
+                finalImage = finalImage.resizedTo1MB()!
+                let fileName=String.uniqueFilename(withPrefix: "kabanCardImageData")+".json"
+                if let json = imageData(instData: finalImage.pngData()!).json {
+                    if let url = try? FileManager.default.url(
+                        for: .documentDirectory,
+                        in: .userDomainMask,
+                        appropriateFor: nil,
+                        create: true
+                    ).appendingPathComponent(fileName){
+                        do {
+                            try json.write(to: url)
+                            print ("saved successfully")
+                            //MARK: is a data leak to be corrected
+                            //TODO: sometimes fileName added but not deleted
+                            self.mediaLinks.append(fileName)
+                            self.delegate?.updateMediaLinks(to: self.mediaLinks)
+                            self.collectionView.reloadData()
+                        } catch let error {
+                            print ("couldn't save \(error)")
+                        }
+                    }
+                }
+                
+            }
+            picker.dismiss(animated: true, completion: nil)
+        }
+        delegate?.preseintViewController(vc: picker)
+        
     }
     @IBOutlet weak var collectionView: UICollectionView!{
         didSet{
@@ -844,7 +885,7 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
 //        cell.imageView.setupImageViewer(images: allImages, initialIndex: indexPath.item)
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: 75, height: 75)
     }
     
