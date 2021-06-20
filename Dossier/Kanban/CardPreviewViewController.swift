@@ -9,6 +9,7 @@ import UIKit
 import ImagePicker
 import SafariServices
 import YPImagePicker
+import ImageViewer_swift
 
 
 protocol cardPreviewTableProtocol {
@@ -29,6 +30,7 @@ protocol cardPreviewTableProtocol {
     func updateTagColor(to tagColor: Int)
     func deleteCard()
     func showNotificationNotPresentAlert()
+//    func popViewController()
 }
 class CardPreviewViewController: UIViewController {
     var delegate: cardPreviewProtocol?
@@ -279,6 +281,7 @@ extension CardPreviewViewController: UITableViewDataSource, UITableViewDelegate{
     }
 }
 extension CardPreviewViewController: cardPreviewTableProtocol{
+    
     func toggleEdittingChecklistRows() {
         self.tableView.setEditing(!tableView.isEditing, animated: true)
     }
@@ -842,8 +845,12 @@ class addMediaKabanCell: UITableViewCell{
         return 10.0
     }
 }
+protocol addMediaKabanCellProtocol{
+    func removeFileName(fileName: String)
+}
 class mediaKabanPreviewCollectionViewCell: UICollectionViewCell{
     @IBOutlet weak var imageView: UIImageView!
+    var delegate: addMediaKabanCellProtocol?
     func setImageLink(fileName: String){
         DispatchQueue.global(qos: .background).async {
             if let url = try? FileManager.default.url(
@@ -852,13 +859,24 @@ class mediaKabanPreviewCollectionViewCell: UICollectionViewCell{
                 appropriateFor: nil,
                 create: true
             ).appendingPathComponent(fileName){
+//                self.imageView.setupImageViewer(datasource: ImageDataSource(url: url), initialIndex: 0, options: [ImageViewerOption.rightNavItemTitle("Delete", onTap: { someInt in
+//                    print("yet to implement delete")
+//                })], from: nil)
+//                self.imageView.setupImageViewer(url: url)
+//                self.imageView.setupImageViewer(url: url)
                 if let jsonData = try? Data(contentsOf: url){
                     if let extract = imageData(json: jsonData){
                         let x=extract.data
                         if let image = UIImage(data: x){
                             DispatchQueue.main.async {
                                 self.imageView.image = image
-                                self.imageView.setupImageViewer()
+//                                self.imageView.setupImageViewer()
+//                                self.imageView.setupImageViewer(options: [ImageViewerOption.rightNavItemTitle("Delete", onTap: { someInt in
+//                                    print("yet to implement delete")
+//                                })], from: nil)
+                                self.imageView.setupImageViewer(options: [ImageViewerOption.rightNavItemIcon(UIImage(systemName: "trash")!, onTap: { someInt in
+                                    self.delegate?.removeFileName(fileName: fileName)
+                                })], from: nil)
                             }
                         }
                     }else{
@@ -869,7 +887,30 @@ class mediaKabanPreviewCollectionViewCell: UICollectionViewCell{
         }
     }
 }
-extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+extension addMediaKabanCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, addMediaKabanCellProtocol{
+    func removeFileName(fileName: String) {
+        if let ind = self.mediaLinks.firstIndex(of: fileName){
+            let fileManager = FileManager.default
+            if let url = try? FileManager.default.url(
+                for: .documentDirectory,
+                in: .userDomainMask,
+                appropriateFor: nil,
+                create: true
+            ).appendingPathComponent(fileName){
+                do{
+                    try fileManager.removeItem(at: url)
+                    print("deleted item \(url) succefully")
+                } catch{
+                    print("ERROR: item  at \(url) couldn't be deleted")
+                    return
+                }
+            }
+            self.mediaLinks.remove(at: ind)
+        }
+        delegate?.updateMediaLinks(to: self.mediaLinks)
+        self.collectionView.reloadData()
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return mediaLinks.count
@@ -880,6 +921,7 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
         
         cell.layer.cornerRadius=imageCornerRadius
         cell.layer.masksToBounds=true
+        cell.delegate=self
         cell.setImageLink(fileName: mediaLinks[indexPath.row])
 //        cell.imageView.setupImageViewer()
 //        cell.imageView.setupImageViewer(images: allImages, initialIndex: indexPath.item)
@@ -889,6 +931,8 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
         return CGSize(width: 75, height: 75)
     }
     
+    //Using YPIImagePicker now so redundant
+    /*
     func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
         imagePicker.expandGalleryView()
     }
@@ -926,7 +970,7 @@ extension addMediaKabanCell: UICollectionViewDataSource, ImagePickerDelegate, UI
         imagePicker.dismiss(animated: true, completion: nil)
         print("imagePicker cancelButtonDidPress")
     }
-    
+    */
     var imageCornerRadius: CGFloat{
         return 6.0
     }
