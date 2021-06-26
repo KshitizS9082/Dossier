@@ -76,7 +76,7 @@ class journalMediaTableViewCell: UITableViewCell, UITextViewDelegate{
 //                                            self.mediaImageView.setupImageViewer(images: [image])
 //                                        }
 //                                    }
-                                        self.mediaImageView.setupImageViewer(images: [image])
+//                                        self.mediaImageView.setupImageViewer(images: [image])
                                 }
                             }else{
                                 print("couldn't get UIImage from extrated data, check if sure this file doesn't exist and if so delete it from array")
@@ -88,9 +88,9 @@ class journalMediaTableViewCell: UITableViewCell, UITextViewDelegate{
                 }
             }
         }else{
-            self.mediaImageView.image = UIImage(systemName: "camera")
+            self.mediaImageView.image = UIImage(systemName: "camera.viewfinder")
             self.mediaImageView.gestureRecognizers?.removeAll()
-            self.mediaImageView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action:  #selector(getImage)))
+            self.mediaImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(getImage)))
         }
 //        var urlList = [URL]()
 //        for file in imageFileNames{
