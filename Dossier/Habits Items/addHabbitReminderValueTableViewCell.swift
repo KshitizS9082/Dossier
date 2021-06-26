@@ -48,7 +48,7 @@ class addHabbitReminderValueTableViewCell: UITableViewCell {
             }
         }
         delegate?.updated(indexpath: index)
-        datePicker.minimumDate = Date()
+        datePicker.minimumDate = Date().startOfDay
         datePicker.date=firstReminderDate
         // Initialization code
     }
