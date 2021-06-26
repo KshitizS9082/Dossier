@@ -224,7 +224,11 @@ var index = IndexPath()
 class journalFullViewImageCell: UITableViewCell{
     var delegate: journalFullViewTableProtocol?
     var index = IndexPath()
-    @IBOutlet weak var journalImage: UIImageView!
+    @IBOutlet weak var journalImage: UIImageView!{
+        didSet{
+            journalImage.layer.cornerRadius = 15
+        }
+    }
     @IBOutlet weak var myheightConstraint: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
