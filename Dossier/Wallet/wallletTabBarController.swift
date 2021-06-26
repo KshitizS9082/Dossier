@@ -30,7 +30,23 @@ class wallletTabBarController: UITabBarController {
 ////        self.view.addSubview(blurEffectView)
 //        self.tabBar.addSubview(blurEffectView)
     }
-    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if let indexSelected = tabBar.items?.firstIndex(of: item){
+            if selectedIndex==0 && indexSelected==1{
+                //TODO: Check if it works
+                if let vc = self.viewControllers?.first as? walletViewController{
+                    vc.save()
+                }
+                print("IS SWITCHING")
+            }
+        }
+    }
+//    func reloadStatsVC(){
+//        if let vc = self.viewControllers?[1] as? WalletStatsViewController{
+//            print("found wallet statts vc")
+//            vc.viewWillAppear(true)
+//        }
+//    }
     // TabBarButton – Setup Middle Button
     func setupMiddleButton() {
         /*
