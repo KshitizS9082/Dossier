@@ -465,7 +465,18 @@ extension habitTableViewCell: JTAppleCalendarViewDataSource, JTAppleCalendarView
            //        } else {
            //           cell.isHidden = true
            //        }
+        
         if let hdt = habitData{
+            if date.startOfDay < hdt.constructionDate.startOfDay{
+                cell.dateBackgroundView.isHidden=true
+                cell.countLabel.isHidden=true
+            }else if let tarda = hdt.targetDate,  date.startOfDay > tarda {
+                cell.dateBackgroundView.isHidden=true
+                cell.countLabel.isHidden=true
+            } else{
+                cell.dateBackgroundView.isHidden=false
+                cell.countLabel.isHidden=false
+            }
             var sameDay = false
             switch hdt.habitGoalPeriod {
             case .daily:
