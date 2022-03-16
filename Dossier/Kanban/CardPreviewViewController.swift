@@ -6,7 +6,7 @@
 //  Copyright © 2020 Kshitiz Sharma. All rights reserved.
 //
 import UIKit
-import ImagePicker
+//import ImagePicker
 import SafariServices
 import YPImagePicker
 import ImageViewer_swift

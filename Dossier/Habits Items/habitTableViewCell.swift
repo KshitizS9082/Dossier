@@ -310,7 +310,8 @@ class habitTableViewCell: UITableViewCell {
         let gradientColors = [UIColor.systemPink.cgColor, UIColor.clear.cgColor] as CFArray // Colors of the gradient
         let colorLocations:[CGFloat] = [1.0, 0.0] // Positioning of the gradient
         let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) // Gradient Object
-        set1.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
+        //TODO: add gradient, removed on 15Mar2022`
+//        set1.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
         set1.drawFilledEnabled = true // Draw the Gradient
         
         //Date of goalcount
@@ -573,7 +574,7 @@ extension habitTableViewCell: JTAppleCalendarViewDataSource, JTAppleCalendarView
         return MonthSize(defaultSize: 40)
     }
 }
-class ChartValueFormatter: NSObject, IValueFormatter {
+class ChartValueFormatter: NSObject, ValueFormatter {
     fileprivate var numberFormatter: NumberFormatter?
 
     convenience init(numberFormatter: NumberFormatter) {

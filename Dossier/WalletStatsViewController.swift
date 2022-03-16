@@ -353,7 +353,7 @@ class balanceGraphTableViewCell: UITableViewCell,ChartViewDelegate {
             print("set data to \(self.yValues)")
             
             //Date of entrieds
-            let set1 = LineChartDataSet(entries: self.yValues, label: Locale.current.currencyCode)
+            let set1 = LineChartDataSet(entries: self.yValues, label: Locale.current.currencyCode ?? "₹")
             set1.drawCirclesEnabled=false
             set1.mode = .horizontalBezier
             set1.lineWidth = 3
@@ -362,7 +362,8 @@ class balanceGraphTableViewCell: UITableViewCell,ChartViewDelegate {
             let gradientColors = [#colorLiteral(red: 0.2433572114, green: 0.7530457377, blue: 0.7532768846, alpha: 1).cgColor, #colorLiteral(red: 0.2433572114, green: 0.7530457377, blue: 0.7532768846, alpha: 0.4575814261).cgColor] as CFArray // Colors of the gradient
             let colorLocations:[CGFloat] = [1.0, 0.0] // Positioning of the gradient
             let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) // Gradient Object
-            set1.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
+            //TODO: add gradient, removed on 15Mar2022
+//            set1.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
             set1.drawFilledEnabled = true // Draw the Gradient
             
             let data = LineChartData(dataSet: set1)
@@ -412,7 +413,7 @@ extension balanceGraphTableViewCell{
         return 175
     }
 }
-public class DateValueFormatter: NSObject, IAxisValueFormatter {
+public class DateValueFormatter: NSObject, AxisValueFormatter {
     private let dateFormatter = DateFormatter()
     override init() {
         super.init()
